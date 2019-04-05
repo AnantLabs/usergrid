@@ -1,6 +1,10 @@
 language: java
 
 before_install:
+  - git clone https://github.com/apache/usergrid-java
+  - cd usergrid-java
+  - mv clean install -DskipTests=true
+  - cd ..
   - cd stack
   
 script:
