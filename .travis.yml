@@ -1,1 +1,7 @@
 language: java
+
+before_install:
+  - cd stack
+  
+script:
+  - mvn clean install -DskipTests=true
